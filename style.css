@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body  {
+    width: 100%;
+    height: 100vh;
+}
+header {
+    height: 90px;
+    width: 100%;
+    background: lightblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+}
+
+.reset-btn {
+    padding: 8px 16px;
+    border-radius: 50px;
+    align-self: center;
+}
+.type-box {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.sketch {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* the actual grid */
+.grid-container {
+    display: grid;
+    width: 50vw;
+    max-width: 960;
+    /* grid-template-columns: repeat(16, minmax(25px, auto)); */
+    margin: 0 auto;
+    grid-auto-flow: dense;
+    border: 3px solid black;
+}
+.grid-item {
+    background: #eeeeee;
+    /* outline: 4px solid black; */
+    padding: 8px;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 50px;
+}
+
+@media (max-width: 1040px) {
+
+}
+@media (max-width: 1296px){
+    .sketch {
+        flex-direction: column;
+        align-items: space-between;
+    }
+    .options {
+        align-self: center;
+    }
+}
