@@ -6,7 +6,9 @@
 
 body  {
     width: 100%;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 header {
     height: 90px;
@@ -52,12 +54,21 @@ main {
 }
 .grid-item {
     background-color: #eee;
+    min-height: 20px;
     padding: 2px;
 }
 
-/* Color 'states' */
-.default {
-    background-color: #000;
+/* Footer */
+footer {
+    height: 90px;
+    width: 100%;
+    background: lightblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
 }
 
 .btn {
