@@ -35,7 +35,9 @@ main {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
 .sketch {
     display: flex;
     justify-content: space-between;
@@ -44,17 +46,18 @@ main {
 /* the actual grid */
 .grid-container {
     display: grid;
-    width: 50vw;
-    max-width: 960;
-    /* grid-template-columns: repeat(16, minmax(25px, auto)); */
+    width: 960px;
     margin: 0 auto;
-    grid-auto-flow: dense;
-    border: 3px solid black;
+    outline: 3px solid black;
 }
 .grid-item {
-    background: #eeeeee;
-    /* outline: 4px solid black; */
-    padding: 8px;
+    background-color: #eee;
+    padding: 2px;
+}
+
+/* Color 'states' */
+.default {
+    background-color: #000;
 }
 
 .btn {
@@ -62,15 +65,8 @@ main {
     border-radius: 50px;
 }
 
-@media (max-width: 1040px) {
-
-}
-@media (max-width: 1296px){
-    .sketch {
-        flex-direction: column;
-        align-items: space-between;
-    }
-    .options {
-        align-self: center;
+@media (max-width: 960px) {
+    .grid-container {
+        width: 50vw;
     }
 }
