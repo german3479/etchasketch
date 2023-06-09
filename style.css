@@ -13,7 +13,7 @@ body  {
 header {
     height: 90px;
     width: 100%;
-    background: lightblue;
+    background: red;
     color: white;
     display: flex;
     justify-content: center;
@@ -62,7 +62,7 @@ main {
 footer {
     height: 90px;
     width: 100%;
-    background: lightblue;
+    background: red;
     color: white;
     display: flex;
     flex-direction: column;
